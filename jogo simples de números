@@ -1,0 +1,10 @@
+import random
+
+secreto = random.randint(1, 10)
+
+palpite = int(input("Adivinhe um número de 1 a 10: "))
+
+if palpite == secreto:
+    print("Acertou!")
+else:
+    print(f"Errou! Era {secreto}")
