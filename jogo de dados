@@ -1,0 +1,13 @@
+import random
+
+print("Jogando os dados...")
+jogador = random.randint(1, 6)
+computador = random.randint(1, 6)
+print(f"Você: {jogador} | Computador: {computador}")
+
+if jogador > computador:
+    print("Você venceu!")
+elif jogador < computador:
+    print("Você perdeu!")
+else:
+    print("Empate!")
