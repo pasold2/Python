@@ -1,0 +1,14 @@
+import random
+import time
+
+nums = random.sample(range(10, 100), 5)
+print("Memorize os números:")
+print(nums)
+time.sleep(5)
+print("\n" * 20)
+
+resposta = input("Digite os números que você lembra (separados por espaço): ")
+lembrados = list(map(int, resposta.split()))
+
+acertos = set(nums) & set(lembrados)
+print(f"Você acertou {len(acertos)} número(s): {acertos}")
