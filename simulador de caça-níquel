@@ -1,0 +1,13 @@
+import random
+
+symbols = ['🍒', '🍋', '🔔', '⭐', '💎']
+
+def slot_machine():
+    spin = [random.choice(symbols) for _ in range(3)]
+    print(" | ".join(spin))
+    if spin[0] == spin[1] == spin[2]:
+        print("🎉 JACKPOT! 🎉")
+    else:
+        print("Tente novamente!")
+
+slot_machine()
